@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+input {
+  border-radius: 1px;
+  text-align: center;
+  height: 38px;
 }
