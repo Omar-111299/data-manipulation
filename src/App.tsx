@@ -17,6 +17,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from 'redux';
 import { State } from './state/reducers';
+import { toggleTab } from "./state/action-creators";
 
 
 
@@ -32,6 +33,9 @@ const App = () => {
   const [flights, setFlights] = useState([]);
 
   //Material UI tabs
+  const dispatch = useDispatch();
+
+
   const [value, setValue] = useState(false);
   const handleChange = (event: React.SyntheticEvent, newValue: boolean) => {
     setValue(newValue);
