@@ -79,7 +79,7 @@ const App = () => {
     try {
       console.log("We are here");
       const response = await axios.get(
-        "https://asynce:p@5yTd3SML3iKaW@opensky-network.org/api/flights/arrival?airport=KTEB&begin=1611365147&end=1611451547"
+        "https://USERNAME:PASSWORD@opensky-network.org/api/flights/arrival?airport=KTEB&begin=1611365147&end=1611451547"
       );
 
       const data = await response.data;
